@@ -1,0 +1,13 @@
+# postgres-configmap.yaml
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-configmap
+data:
+  POSTGRES_DB: 'test'
+  POSTGRES_USER: 'root'
+  POSTGRES_PASSWORD: 'root'
+
+
+

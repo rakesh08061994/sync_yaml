@@ -1,0 +1,12 @@
+# wordpress-configmap.yaml
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: wordpress-config
+data:
+  WORDPRESS_DB_HOST: 'postgres-service'
+  WORDPRESS_DB_NAME: 'test'
+  WORDPRESS_DB_USER: 'root'  #actual database username
+  WORDPRESS_DB_PASSWORD: 'root' #actual database password
+
